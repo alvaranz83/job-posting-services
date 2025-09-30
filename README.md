@@ -1,5 +1,4 @@
 # job-posting-services
-
 📢 Job Posting Service
 A microservice that integrates with external job portals (LinkedIn, ZipRecruiter, InfoJobs, Indeed) to post jobs and sync applicants into CipherScale’s recruiting system.
 ⚙️ Features
@@ -10,36 +9,36 @@ GPT Integration → Natural-language prompts like
 Pluggable Integrations → Each portal lives in its own module (integrations/).
 Railway Ready → Deployable in one click with FastAPI + Postgres.
 
-###
-🏗️ Architecture
-job-posting-service/
-│── app/
-│   ├── main.py                # FastAPI entrypoint
-│   ├── config.py              # Env vars & settings
-│   ├── models.py              # Pydantic models
-│   ├── database.py            # DB connection (Postgres on Railway)
-│   ├── routers/               # Route definitions
-│   │   ├── jobs.py            # /jobs/post endpoints
-│   │   ├── candidates.py      # /candidates/sync endpoints
-│   │   └── health.py          # /health endpoint
-│   ├── integrations/          # External job portal APIs
-│   │   ├── linkedin.py
-│   │   ├── indeed.py
-│   │   ├── ziprecruiter.py
-│   │   └── infojobs.py
-│   ├── services/              # Core business logic
-│   │   ├── job_poster.py
-│   │   └── candidate_sync.py
-│   └── utils/                 # Helpers
-│       ├── gpt_agent.py
-│       └── logger.py
-│
-├── tests/                     # Unit tests
-├── requirements.txt
-├── Dockerfile
-├── railway.toml
-└── README.md
-###
+
+#🏗️ Architecture
+#job-posting-service/
+#│── app/
+#│   ├── main.py                # FastAPI entrypoint
+#│   ├── config.py              # Env vars & settings
+#│   ├── models.py              # Pydantic models
+#│   ├── database.py            # DB connection (Postgres on Railway)
+#│   ├── routers/               # Route definitions
+#│   │   ├── jobs.py            # /jobs/post endpoints
+#│   │   ├── candidates.py      # /candidates/sync endpoints
+#│   │   └── health.py          # /health endpoint
+#│   ├── integrations/          # External job portal APIs
+#│   │   ├── linkedin.py
+#│   │   ├── indeed.py
+#│   │   ├── ziprecruiter.py
+#│   │   └── infojobs.py
+#│   ├── services/              # Core business logic
+#│   │   ├── job_poster.py
+#│   │   └── candidate_sync.py
+#│   └── utils/                 # Helpers
+#│       ├── gpt_agent.py
+#│       └── logger.py
+#│
+#├── tests/                     # Unit tests
+#├── requirements.txt
+#├── Dockerfile
+#├── railway.toml
+#└── README.md
+#####
 
 🚀 Deployment on Railway
 Push this repo to GitHub/GitLab.
