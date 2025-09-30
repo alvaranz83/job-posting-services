@@ -9,6 +9,8 @@ GPT Integration → Natural-language prompts like
 “Post a Senior Backend Engineer role to LinkedIn and Indeed.”
 Pluggable Integrations → Each portal lives in its own module (integrations/).
 Railway Ready → Deployable in one click with FastAPI + Postgres.
+
+###
 🏗️ Architecture
 job-posting-service/
 │── app/
@@ -37,6 +39,8 @@ job-posting-service/
 ├── Dockerfile
 ├── railway.toml
 └── README.md
+###
+
 🚀 Deployment on Railway
 Push this repo to GitHub/GitLab.
 In Railway, create a New Project → Deploy from GitHub repo.
