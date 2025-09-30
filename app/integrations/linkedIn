@@ -1,1 +1,9 @@
+import httpx
+from app.models import JobPostRequest
+
+API_BASE = "https://api.linkedin.com/v2"
+
+async def post_job(body: JobPostRequest):
+    # Stub → Replace with LinkedIn API logic
+    return {"status": "success", "portal": "linkedin", "role": body.roleName}
 
